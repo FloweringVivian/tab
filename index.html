@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab菜单切换</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+	.tab{width: 1000px;margin: 0 auto;padding-top: 30px;}
+	.tab .tab-title{height: 30px;}
+	.tab .tab-title .tab-btn{float: left;width: 100px;height: 30px;line-height: 30px;border: 1px solid #ccc;border-bottom:0;text-align: center;margin-right: 10px;text-decoration: none;color: #333;font-size: 14px;}
+	.tab .tab-title .active{background: #abcdef;}
+	.tab .tab-list{display: none;width: 500px;height: 300px;border: 1px solid #ccc;}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+</head>
+<body>
+	<div class="tab">
+		<div class="tab-title">
+			<a href="javascript:;" class="tab-btn active">菜单一</a>
+			<a href="javascript:;" class="tab-btn">菜单二</a>
+			<a href="javascript:;" class="tab-btn">菜单三</a>
+		</div>
+		<div class="tab-body">
+			<div class="tab-list" style="display:block;">内容一</div>
+			<div class="tab-list">内容二</div>
+			<div class="tab-list">内容三</div>
+		</div>
+	</div>
+</body>
+</html>
